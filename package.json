@@ -4,19 +4,14 @@
   "version": "1.0.2",
   "author": "david@fmail.co.uk",
   "scripts": {
-    "postinstall": "node lib/aesprim.js > generated/aesprim-browser.js",
     "test": "mocha -u tdd test && jscs lib && jshint lib",
     "generate": "node bin/generate_parser.js > generated/parser.js"
   },
   "dependencies": {
-    "esprima": "1.2.2",
     "static-eval": "2.0.2",
     "underscore": "1.7.0"
   },
-  "browser": "./jsonpath.js",
-  "alias": {
-    "./lib/aesprim.js": "./generated/aesprim-browser.js"
-  },
+  "main": "./index.js",
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-browserify": "3.8.0",
