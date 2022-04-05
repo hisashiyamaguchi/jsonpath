@@ -15,7 +15,7 @@ module.exports = function (grunt) {
                     browserifyOptions: { standalone: '<%= pkg.name %>' },
                     banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n',
                     alias: {
-                        "jsonpath": "./index.js"
+                        "qp-jsonpath": "./index.js"
                     },
                     require: [
                         /**
