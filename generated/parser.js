@@ -84,7 +84,6 @@ if (!yy.ast) {
     yy.ast = _ast;
     _ast.initialize();
 }
-
 var $0 = $$.length - 1;
 switch (yystate) {
 case 1:yy.ast.set({ expression: { type: "root", value: $$[$0] } }); yy.ast.unshift(); return yy.ast.yield()
