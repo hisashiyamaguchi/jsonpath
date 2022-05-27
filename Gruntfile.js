@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                          * It's either this or bundle a copy of the library with those few bytes of changes.
                          */
                         src = src.toString("utf8").replace(/(function isIdentifierStart\(ch\) {\s+return)/m, '$1 (ch == 0x40) || ');
-                        next(err, new Buffer(src, "utf8"));
+                        next(err, Buffer.from(src, "utf8"));
                     }
                 }
             }
